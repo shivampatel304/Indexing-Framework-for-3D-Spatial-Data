@@ -1,1 +1,1 @@
-# -Indexing-Framework-for-3D-Spatial-Data
+# Indexing-Framework-for-3D-Spatial-Data
