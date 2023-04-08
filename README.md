@@ -4,4 +4,5 @@ This project involves developing an effective index structure to speed up findin
 
 The index structure can be either standard or ad hoc, tree-based or hash-based, and should be used for both types of queries. The project report should present the index/hash structure or a mixed (ad hoc) solution and explain its features. Additionally, the report should include the size of the index created and the query processing time to answer the queries. The maximum number of points for answering each query type is three, and the maximum points for the report are two. The presentation style and Q/A during the demo will get one point at most.
 
+
 The goal of this project is to build a fast and scalable indexing structure for 3D point clouds, using advanced indexing techniques to accelerate spatial query processing.
