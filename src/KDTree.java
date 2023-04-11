@@ -221,16 +221,13 @@ public class KDTree {
         }
 
         double distance = node.point.distance(target);
-
-        if (heap.size() < k) {
+        if (heap.size() == 0 || heap.peek().distance == distance) {
             heap.offer(new HeapNode(node.point, distance));
-        } else {
-            HeapNode top = heap.peek();
-            if (distance < top.distance) {
-                heap.poll();
-                heap.offer(new HeapNode(node.point, distance));
-            }
+        } else if (heap.peek().distance<distance){
+            heap.clear();
+            heap.offer(new HeapNode(target, distance));
         }
+
 
         int axis = depth % K;
         double targetValue = 0;
